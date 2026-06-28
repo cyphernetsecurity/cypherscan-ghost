@@ -1,20 +1,37 @@
 {
   "name": "cypherscan-ghost",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "description": "Scan uploaded files with CypherScan before they enter Ghost CMS workflows.",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node -e \"require('./index.js'); console.log('cypherscan-ghost loaded')\""
   },
+  "keywords": [
+    "ghost",
+    "ghost-cms",
+    "storage-adapter",
+    "cypherscan",
+    "malware",
+    "security",
+    "upload-security"
+  ],
+  "author": "CypherNet Security",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyphernetsecurity/cypherscan-ghost.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/cyphernetsecurity/cypherscan-ghost/issues"
   },
   "homepage": "https://github.com/cyphernetsecurity/cypherscan-ghost#readme",
-  "description": ""
+  "dependencies": {
+    "ghost-storage-base": "^1.0.0"
+  }
 }
